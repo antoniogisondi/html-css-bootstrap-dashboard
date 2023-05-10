@@ -10,12 +10,11 @@
     <title>Bootstrap Dashboard</title>
 </head>
     <body>
-        <div class="container-fluid">
-            <div class="container-sm">
+            <div class="container-fluid">
                 <header>
-                    <div class="container background-white">
-                        <div class="row row-cols-12">
-                            <div class="col-1">
+                    <div class="container-fluid background-white">
+                        <div class="row">
+                            <div class="col-1 col-lg-2">
                                 <nav class="navbar bg-body-tertiary">
                                     <div class="container-fluid">
                                     <a class="navbar-brand" href="#">
@@ -25,11 +24,11 @@
                                 </nav>
                             </div>
 
-                            <div class="col-10">
+                            <div class="col-9 col-lg-8">
                                 <nav class="navbar bg-body-tertiary">
                                     <div class="container justify-content-center">
                                     <form class="d-flex container-fluid form-control-lg" role="search">
-                                        <input class="form-control form-control-lg bg" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                                        <input class="form-control form-control-md form-control-sm form-control-lg bg" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                                     </form>
                                     </div>
                                 </nav>
@@ -47,7 +46,34 @@
                         </div>
                     </div>
                 </header>
+
+                <main>
+                    <div class="container-fluid">
+                        <div class="row row-cols-2">
+                            <div class="col-2 sidebar">
+                                <img src="./img/sidebar-bg.png" alt="">
+                            </div>
+                            <div class="col-10">
+                                <div class="container bg-blue">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4 col-lg-8 mb-1 bg-red"></div>
+                                        <div class="col-sm-12 col-md-4 col-lg-2 mb-1 bg-red"></div>
+                                        <div class="col-sm-12 col-md-4 col-lg-2 mb-1 bg-red"></div>
+                                    </div>
+                                </div>
+
+                                <div class="container">
+                                    <div class="row row-cols-1">
+                                        <div class="col col-lg-7 card mt-4"></div>
+                                        <div class="col col-lg-5 card mt-4"></div>
+                                        <div class="col col-lg-7 card mt-4"></div>
+                                        <div class="col col-lg-5 card mt-4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </div>
-        </div>
     </body>
 </html>

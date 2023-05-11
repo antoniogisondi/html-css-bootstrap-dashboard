@@ -27,13 +27,11 @@ header{
 
 .bg-blue{
     background-color: rgba(27,114,232,255);
-    height: 320px;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .bg-red{
     background-color: red;
-    height: 100px;
 }
 
 i{
@@ -50,4 +48,22 @@ i{
 
 .width{
     width: 250px;
+    margin-top: 80px
+}
+
+.icon{
+    display: inline-flex;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.custom-btn{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.inline{
+    display: inline-block;
 }

@@ -57,10 +57,6 @@ i{
     width: 50%;
 }
 
-.border{
-    border-radius: 25px;
-}
-
 .graphic{
     width: 100%;
 }
@@ -115,4 +111,30 @@ i{
 
 .h-icon{
     color: rgba(91,88,88,255);
+}
+
+.inner-addon{
+    position: relative;
+}
+
+.inner-addon .glyphicon {
+    position: absolute; 
+    padding: 13px 8px;
+    pointer-events: none;
+}
+
+.left-addon .glyphicon{
+    left:  14px;
+}
+
+.right-addon .glyphicon{
+    right: 0px;
+}
+
+.left-addon input{
+    padding-left:  30px; 
+}
+
+.right-addon input{
+    padding-right: 30px; 
 }

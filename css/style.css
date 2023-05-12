@@ -8,6 +8,21 @@ header{
     background-color: rgba(248,249,250,255);
 }
 
+.sidebar{
+    background-color:rgba(5,30,52,255) ;
+    background-image:url(../img/sidebar-bg.png);
+    width: 250px;
+    margin-top: 65px
+} 
+
+.icon{
+    display: inline-flex;
+    padding: 5px 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
 .background-white{
     background-color: white;
 }
@@ -16,22 +31,10 @@ header{
     background-color: rgba(229,229,229,255);
 }
 
-.sidebar{
-    background-color:rgba(5,30,52,255) ;
-    height: 200vh;
-} 
-
-.sidebar img{
-    width: 100%;
-}
 
 .bg-blue{
     background-color: rgba(27,114,232,255);
-    margin-top: 80px;
-}
-
-.bg-red{
-    background-color: red;
+    margin-top: 65px;
 }
 
 i{
@@ -46,18 +49,6 @@ i{
     width: 100%;
 }
 
-.width{
-    width: 250px;
-    margin-top: 80px
-}
-
-.icon{
-    display: inline-flex;
-    padding: 5px 10px;
-    border: 1px solid grey;
-    border-radius: 5px;
-    text-decoration: none;
-}
 
 .custom-btn{
     background-color: transparent;
@@ -66,4 +57,19 @@ i{
 
 .inline{
     display: inline-block;
+    margin-left: 15px;
+}
+
+.blue{
+    background-color: blue;
+    font-size: 13px;
+}
+
+.color-white{
+    color: white;
+}
+
+.arrow{
+    width: 30px;
+    color: white;
 }

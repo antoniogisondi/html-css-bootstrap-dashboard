@@ -15,9 +15,9 @@
         <header class="fixed-top">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col col-sm-2 col-md-3 col-lg-2 gx-0">
+                    <div class="col col-sm-2 col-md-2 col-lg-2 gx-0">
                         <nav class="navbar bg-body-tertiary">
-                            <div class="container-fluid">
+                            <div class="container-fluid d-flex justify-content-center">
                                 <a class="navbar-brand d-sm-block d-md-block d-lg-none" href="#">
                                     <img src="./img/mobile-logo.png" alt="Bootstrap" width="50" height="50">
                                 </a>
@@ -28,7 +28,7 @@
                         </nav>
                     </div>
 
-                    <div class="col col-sm-8 col-md-5 col-lg-8 gx-0">
+                    <div class="col col-sm-8 col-md-6 col-lg-8 gx-0">
                         <nav class="navbar bg-body-tertiary">
                             <div class="container-fluid justify-content-center">
                                 <form class="d-flex container-fluid form-group inner-addon left-addon" role="search">
@@ -43,19 +43,26 @@
 
                     <div class="col col-sm-2 col-md-4 col-lg-2 gx-0">
                         <nav class="navbar bg-body-tertiary">
-                            <div class="container-fluid">
-                                <a class="navbar-brand d-sm-none d-md-block h-icon" href="#">
+                            <div class="container-fluid d-flex justify-content-center">
+                                <a class="d-sm-none d-md-block h-icon m-2" href="#">
                                     <i class="fa-solid fa-list-ul"></i>
                                 </a>
-                                <a class="navbar-brand d-sm-none d-md-block h-icon" href="#">
+                                <a class="d-sm-none d-md-block h-icon m-2" href="#">
                                     <i class="fa-sharp fa-solid fa-circle-question"></i>
                                 </a>
-                                <a class="navbar-brand d-sm-none d-md-block h-icon" href="#">
+                                <a class="d-sm-none d-md-block h-icon m-2" href="#">
                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                 </a>
-                                <a class="navbar-brand bell" href="#">
-                                    <i class="fa-solid fa-bell"></i>
-                                </a>
+                                <div class="dropdown bell">
+                                    <button class="btn border-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-bell bell"></i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </nav>
                     </div>
@@ -100,7 +107,7 @@
                         <div class="col margin-top">
                             <div class="content-sidebar">
                                 <ul>
-                                    <li>
+                                    <li class="list">
                                         <a href="#">
                                             <span class="sidebar-icon me-2"><i class="fa-solid fa-gear"></i></span>
                                             <span class="d-sm-none d-md-none d-lg-inline-block">Admin</span>
@@ -144,7 +151,7 @@
                         <div class="col margin-top">
                             <div class="content-sidebar">
                                 <ul>
-                                    <li>
+                                    <li class="list">
                                         <a href="#">
                                             <span class="sidebar-icon me-2"><i class="fa-solid fa-gear"></i></span>
                                         </a>
@@ -191,7 +198,7 @@
                                         <h6 class="inline color-white">Nuovo Studente</h6>
                                         <button class="btn inline custom-btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus color-white"></i></button>
 
-                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas w-50 offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                             <div class="offcanvas-header">
                                                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -276,130 +283,134 @@
                                                 <h2 class="card-title">Prossime Classi</h2>
                                             </div>
                                             <div class="card-body">
-                                                <table class="table table-responsive">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Nome</th>
-                                                            <th scope="col">Data Inizio</th>
-                                                            <th class="d-sm-none d-md-inline-block d-lg-inline-block" scope="col">ROI</th>
-                                                            <th class="d-sm-none d-md-inline-block d-lg-inline-block" scope="col">Stato</th>
-                                                            <th scope="col">Azioni</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <img src="./img/class-avatar.jpg" alt="" width="30">
-                                                                <span>Classe 75</span>
-                                                            </th>
-                                                            <td>15 Feb 2021</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge green text-bg-success">Done</span></td>
-                                                            <td>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <img src="./img/class-avatar.jpg" alt="" width="30">
-                                                                <span>Classe 76</span>
-                                                            </th>
-                                                            <td>16 Feb 2021</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge green text-bg-success">Done</span></td>
-                                                            <td>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <img src="./img/class-avatar.jpg" alt="" width="30">
-                                                                <span>Classe 77</span>
-                                                            </th>
-                                                            <td>17 Feb 2021</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge yellow text-bg-warning">process</span></td>
-                                                            <td>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <img src="./img/class-avatar.jpg" alt="" width="30">
-                                                                <span>Classe 78</span>
-                                                            </th>
-                                                            <td>18 Feb 2021</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge green text-bg-success">Done</span></td>
-                                                            <td>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <img src="./img/class-avatar.jpg" alt="" width="30">
-                                                                <span>Classe 79</span>
-                                                            </th>
-                                                            <td>19 Feb 2021</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge red text-bg-danger">failed</span></td>
-                                                            <td>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <img src="./img/class-avatar.jpg" alt="" width="30">
-                                                                <span>Classe 80</span>
-                                                            </th>
-                                                            <td>20 Feb 2021</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge green text-bg-success">Done</span></td>
-                                                            <td>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <img src="./img/class-avatar.jpg" alt="" width="30">
-                                                                <span>Classe 81</span>
-                                                            </th>
-                                                            <td>21 Feb 2021</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge red text-bg-danger">failed</span></td>
-                                                            <td>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
-                                                            </td>
-                                                        </tr>
-
-                                                        <tr>
-                                                            <th scope="row">
-                                                                <img src="./img/class-avatar.jpg" alt="" width="30">
-                                                                <span>Classe 82</span>
-                                                            </th>
-                                                            <td>22 Feb 2021</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
-                                                            <td class="d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge green text-bg-success">Done</span></td>
-                                                            <td>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
-                                                                <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <table class="table fw-light">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th class="fw-medium">Nome</th>
+                                                                    <th class="fw-medium">Data Inizio</th>
+                                                                    <th class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block" scope="col">ROI</th>
+                                                                    <th class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block" scope="col">Stato</th>
+                                                                    <th class="fw-medium">Azioni</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th class="fw-medium" scope="row">
+                                                                        <img src="./img/class-avatar.jpg" alt="" width="30">
+                                                                        <span>Classe 75</span>
+                                                                    </th>
+                                                                    <td class="fw-medium">15 Feb 2021</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge green text-bg-success">Done</span></td>
+                                                                    <td class="fw-medium">
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
+                                                                    </td>
+                                                                </tr>
+        
+                                                                <tr>
+                                                                    <th class="fw-medium fw-medium" scope="row">
+                                                                        <img src="./img/class-avatar.jpg" alt="" width="30">
+                                                                        <span>Classe 76</span>
+                                                                    </th>
+                                                                    <td class="fw-medium">16 Feb 2021</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge green text-bg-success">Done</span></td>
+                                                                    <td class="fw-medium">
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
+                                                                    </td>
+                                                                </tr>
+        
+                                                                <tr>
+                                                                    <th class="fw-medium" scope="row">
+                                                                        <img src="./img/class-avatar.jpg" alt="" width="30">
+                                                                        <span>Classe 77</span>
+                                                                    </th>
+                                                                    <td class="fw-medium">17 Feb 2021</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge yellow text-bg-warning">process</span></td>
+                                                                    <td class="fw-medium">
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
+                                                                    </td>
+                                                                </tr>
+        
+                                                                <tr>
+                                                                    <th class="fw-medium" scope="row">
+                                                                        <img src="./img/class-avatar.jpg" alt="" width="30">
+                                                                        <span>Classe 78</span>
+                                                                    </th>
+                                                                    <td class="fw-medium">18 Feb 2021</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge green text-bg-success">Done</span></td>
+                                                                    <td class="fw-medium">
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
+                                                                    </td>
+                                                                </tr>
+        
+                                                                <tr>
+                                                                    <th class="fw-medium" scope="row">
+                                                                        <img src="./img/class-avatar.jpg" alt="" width="30">
+                                                                        <span>Classe 79</span>
+                                                                    </th>
+                                                                    <td class="fw-medium">19 Feb 2021</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge red text-bg-danger">failed</span></td>
+                                                                    <td class="fw-medium">
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
+                                                                    </td>
+                                                                </tr>
+        
+                                                                <tr>
+                                                                    <th class="fw-medium" scope="row">
+                                                                        <img src="./img/class-avatar.jpg" alt="" width="30">
+                                                                        <span>Classe 80</span>
+                                                                    </th>
+                                                                    <td class="fw-medium">20 Feb 2021</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge green text-bg-success">Done</span></td>
+                                                                    <td class="fw-medium">
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
+                                                                    </td>
+                                                                </tr>
+        
+                                                                <tr>
+                                                                    <th class="fw-medium" scope="row">
+                                                                        <img src="./img/class-avatar.jpg" alt="" width="30">
+                                                                        <span>Classe 81</span>
+                                                                    </th>
+                                                                    <td class="fw-medium">21 Feb 2021</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge red text-bg-danger">failed</span></td>
+                                                                    <td class="fw-medium">
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
+                                                                    </td>
+                                                                </tr>
+        
+                                                                <tr>
+                                                                    <th class="fw-medium" scope="row">
+                                                                        <img src="./img/class-avatar.jpg" alt="" width="30">
+                                                                        <span>Classe 82</span>
+                                                                    </th>
+                                                                    <td class="fw-medium">22 Feb 2021</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4">20%</td>
+                                                                    <td class="fw-medium d-sm-none d-md-inline-block d-lg-inline-block pt-md-4 pt-lg-4"><span class="badge green text-bg-success">Done</span></td>
+                                                                    <td class="fw-medium">
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-trash"></i></a></span>
+                                                                        <span class="icon"><a href=""><i class="fa-solid fa-pen"></i></a></span>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
 
